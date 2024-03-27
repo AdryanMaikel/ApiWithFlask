@@ -3,7 +3,6 @@ const button_get_price = document.getElementById('get_price')
 const select_criptos = document.getElementById('criptomoeda')
 
 button_get_price.addEventListener("click", function() {
-    console.log(select_criptos.value)
     const REQUESTS = new XMLHttpRequest()
     REQUESTS.open('GET', `/get-price/${select_criptos.value}`, true)
     REQUESTS.onreadystatechange = function () {
