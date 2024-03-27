@@ -4,25 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello World!</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <script src="{{ url_for('static', filename='js/scripts.js') }}" defer></script>
 </head>
 <body>
-    <h1>Hello World!</h1>
+    <main>
+        <header>
+            <h1>Hello World!</h1>
+        </header>
 
-    <div>
-        <select name="criptos" id="criptos">
-            <option value="BTC" selected>Bitcoin</option>
-            <option value="ETH">Ether</option>
-            <option value="ADA">Cardano</option>
-            <option value="SOL">Solana</option>
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
+        <section>
+            <h2>Pesquise uma criptomoeda:</h2>
 
-        </select>
-        <button id="get_price">PEGAR PREÇO</button>
-        <div id="result"></div>
-    </div>
+            <label for="criptomoeda">
+                <input type="text" name="criptomoeda" id="criptomoeda">
+            </label>
+        
+            <button id="get_price">PEGAR PREÇO</button>
+            
+            <div id="result"></div>
+        
+        </section>
+    </main>
 
 </body>
 </html>
