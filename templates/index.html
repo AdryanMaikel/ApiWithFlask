@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World!</title>
+    <script src="{{ url_for('static', filename='js/scripts.js') }}" defer></script>
+</head>
+<body>
+    <h1>Hello World!</h1>
+
+    <div>
+        <select name="criptos" id="criptos">
+            <option value="BTC" selected>Bitcoin</option>
+            <option value="ETH">Ether</option>
+            <option value="ADA">Cardano</option>
+            <option value="SOL">Solana</option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+
+        </select>
+        <button id="get_price">PEGAR PREÇO</button>
+        <div id="result"></div>
+    </div>
+
+</body>
+</html>
