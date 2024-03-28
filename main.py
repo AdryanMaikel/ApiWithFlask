@@ -17,7 +17,7 @@ def index():
 
 @APP.route('/get-price/<criptomoeda>')
 def get_price(criptomoeda: str):
-    price = get_price_cripto(tag=criptomoeda)
+    price = get_price_cripto(cripto=criptomoeda)
     return jsonify(price)
 
 
